@@ -74,7 +74,7 @@ public class BaseActivity extends Activity{
 
     private void showDetail(String pkg){
         Intent i = new Intent();
-        i.setClassName(this,"com.example.wingbu.usetimestatistic.ui.UseTimeDetailActivity");
+        i.setClassName(this,"demo.lww.test.usertime.ui.UseTimeDetailActivity");
         i.putExtra("type","times");
         i.putExtra("pkg",pkg);
         startActivity(i);

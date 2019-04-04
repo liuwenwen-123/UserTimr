@@ -104,7 +104,9 @@ public class UseTimeDataManager {
     public void refreshPackageInfoList() {
         mPackageInfoList.clear();
         for (int i = 0 ; i < mStatsList.size() ; i++){
-            PackageInfo info = new PackageInfo(0,calculateUseTime(mStatsList.get(i).getPackageName()),mStatsList.get(i).getPackageName());
+            PackageInfo info = new PackageInfo(0,
+
+        calculateUseTime(mStatsList.get(i).getPackageName()),mStatsList.get(i).getPackageName());
             mPackageInfoList.add(info);
         }
 
